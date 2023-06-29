@@ -1,0 +1,34 @@
+body {
+    background-color: #0b101a;
+}
+
+.sections-color {
+    background-color: #141d2f;
+}
+
+.pair-section {
+    background-color: #141d2f;
+}
+
+.unpair-section {
+    background-color: #182339;
+}
+
+.main-button {
+    background-color: #141d2f;
+}
+
+.secondary-button {
+    background-color: transparent;
+    border-color: #141d2f;
+}
+
+p {
+    margin: 0;
+}
+
+.card-subtitles {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
