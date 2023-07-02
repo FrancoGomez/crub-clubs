@@ -1,30 +1,80 @@
-body {
-    background-color: #0b101a;
-}
-
-.sections-color {
-    background-color: #141d2f;
-}
-
-.pair-section {
-    background-color: #141d2f;
-}
-
-.unpair-section {
-    background-color: #182339;
-}
-
-.main-button {
-    background-color: #141d2f;
-}
-
-.secondary-button {
-    background-color: transparent;
-    border-color: #141d2f;
+:root {
+  --font-title: clamp(2rem, 4vw + 1.2rem, 2.8rem);
+  --font-subtitle: clamp(1.5rem, 4vw + 0.3rem, 1.8rem);
+  --font-sub-subtitle: clamp(1.3rem, 3vw + 0.3rem, 1.45rem);
+  --font-paragraph: clamp(1rem, 3vw + 0.3rem, 1.15rem);
+  --padding-4: min(8vw, 2.5rem);
+  --padding-2: min(4vw, 1.25rem);
+  --image-small: min(36px, 8vw);
+  --image-big: min(150px, 30vw);
 }
 
 p {
-    margin: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: var(--font-title);
+}
+
+.subtitle {
+  font-size: var(--font-subtitle);
+}
+
+.sub-subtitle {
+  font-size: var(--font-sub-subtitle);
+}
+
+.paragraph {
+  font-size: var(--font-paragraph);
+}
+
+.button {
+  font-size: var(--font-paragraph);
+}
+
+.padding-4 {
+  padding: var(--padding-4);
+}
+
+.padding-2 {
+  padding: var(--padding-2);
+}
+
+.image-small {
+  width: var(--image-small);
+  height: var(--image-small);
+}
+
+.image-big {
+  width: var(--image-big);
+  height: var(--image-big);
+}
+
+body {
+  background-color: #0b101a;
+}
+
+.main-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.dark-blue-bg {
+  background-color: #141d2f;
+}
+
+.blue-bg {
+  background-color: #182339;
+}
+
+.main-button {
+  background-color: #141d2f;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border-color: #141d2f;
 }
 
 .card-subtitles {

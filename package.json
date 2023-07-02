@@ -12,7 +12,8 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "server": "nodemon ./src/index.js"
+    "server": "nodemon ./src/index.js",
+    "test-server": "nodemon ./src/app.js"
   },
   "name": "crud-clubs",
   "description": "First class 17 homework for r/ArgentinaPrograma",
