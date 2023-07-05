@@ -1,0 +1,66 @@
+<div class="p-4 main-container">
+  <header>
+    {{> main/modals/confirmationResetDB}}
+    {{> main/modals/notificationResetDB}}
+    {{> main/modals/confirmationDeleteClub}}
+    {{> main/modals/notificationDeleteClub}}
+    <h1 class="text-light text-center sub-subtitle fw-bolder">
+      There are {{teamsInfo.length}} clubs
+    </h1>
+    <div class="d-flex justify-content-center align-content-center padding-2">
+      {{> main/buttons/createClub}}
+      {{> main/buttons/resetClubs}}
+    </div>
+  </header>
+  <section>
+    <ul class="list-group padding-2 ps-0 pe-0">
+      <li
+        class="list-group-item border-0 dark-blue-bg text-light border border-0 padding-2 d-flex justify-content-between align-content-center">
+        <div class="w-100 text-start fw-semibold paragraph">
+          <p>Club</p>
+        </div>
+        <div class="w-100 text-center fw-semibold paragraph">
+          <p>Country</p>
+        </div>
+        <div class="w-100 text-end fw-semibold paragraph">
+          <p>Actions</p>
+        </div>
+      </li>
+      {{#each teamsInfo}}
+      <li
+        class="list-group-item {{#if (isEven @index)}}blue-bg{{else}}dark-blue-bg{{/if}} text-light border border-0 padding-2">
+        <div class="d-flex justify-content-between align-content-center">
+          <div class="d-flex justify-content-start align-content-center w-100" style="max-width: 33%;">
+            <a class=" d-flex justify-content-start align-content-center w-100 link-light text-decoration-none"
+              href={{this.tla}}>
+              <div class="mt-auto mb-auto m-1 me-2 container-image-small">
+                <img src={{this.crestUrl}} alt="{{this.shortName}} crest"
+                  onerror="this.src='/img/defaultImage/default-image.svg'" class="ms-auto me-auto image-small" />
+              </div>
+              <p class="mt-auto mb-auto paragraph text-truncate" style="max-width: 100%">{{this.shortName}}</p>
+            </a>
+          </div>
+          <div class="d-flex justify-content-center align-content-center w-100">
+            <p class="mt-auto mb-auto paragraph">{{this.area.name}}</p>
+          </div>
+          <div class="d-flex justify-content-end align-content-center w-100">
+            <div class="mt-auto mb-auto p-1">
+              {{> main/buttons/viewClub teamsInfo=.}}
+            </div>
+            <div class="mt-auto mb-auto p-1">
+              {{> main/buttons/updateClub teamsInfo=.}}
+            </div>
+            <div class="mt-auto mb-auto p-1">
+              {{> main/buttons/deleteClub teamsInfo=.}}
+            </div>
+          </div>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </section>
+</div>
+
+<script src="/handlers/handleResetClubs.js"></script>
+<script src="/handlers/handleSettingDeleteButton.js"></script>
+<script src="/handlers/handleRedirect.js"></script>

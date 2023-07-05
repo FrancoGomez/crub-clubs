@@ -1,0 +1,102 @@
+<div class="p-4 main-container">
+    {{> create/modals/confirmationCreateClub}}
+    {{> create/modals/confirmationDiscardClub}}
+    {{> create/modals/notificationCreateClub}}
+    <div class="card dark-blue-bg p-4">
+        <div class="card-body pb-3">
+            <h1 class="text-white fw-bold text-center title padding-2">Create
+                club</h1>
+        </div>
+        <form id="create-club" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label text-white fw-semibold sub-subtitle">Club name<span
+                        class="paragraph fw-medium text-danger"> *</span></label>
+                <input type="text" class="form-control is-invalid" id="name"
+                    aria-describedby="basic-addon3 basic-addon4" name="name" required onchange=validateInput("name") />
+            </div>
+            <div class="mb-3">
+                <label for="area-name" class="form-label text-white fw-semibold sub-subtitle">Country<span
+                        class="paragraph fw-medium text-danger"> *</span></label>
+                <select class="form-select" aria-label="Select a country" name="area" id="area-name" required=""
+                    onchange=validateSelect("area-name")>
+                    <option value="default" selected disable>--- Select a country ---</option>
+                    {{#each countriesInfo}}
+                    <option value="{{this}}">{{this}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="shortName" class="form-label text-white fw-semibold sub-subtitle">Short
+                    name<span class="paragraph fw-medium text-danger"> *</span></label>
+                <input type="text" class="form-control is-invalid" id="shortName"
+                    aria-describedby="basic-addon3 basic-addon4" name="shortName" required
+                    onchange=validateInput("shortName") />
+            </div>
+            <div class="mb-3">
+                <label for="tla" class="form-label text-white fw-semibold sub-subtitle">TLA<span
+                        class="paragraph fw-medium text-danger"> *</span></label>
+                <input type="text" class="form-control is-invalid" id="tla" aria-describedby="basic-addon3 basic-addon4"
+                    name="tla" minlength="3" maxlength="3" required onchange=validateInput("tla") />
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label text-white fw-semibold sub-subtitle">Address<span
+                        class="paragraph fw-medium text-danger"> *</span></label>
+                <input type="text" class="form-control is-invalid" id="address"
+                    aria-describedby="basic-addon3 basic-addon4" name="address" onchange=validateInput("address")
+                    required />
+            </div>
+            <div class="mb-3">
+                <label for="venue" class="form-label text-white fw-semibold sub-subtitle">Venue</label>
+                <input type="text" class="form-control" id="venue" aria-describedby="basic-addon3 basic-addon4"
+                    name="venue" onchange=validateInput("venue") />
+            </div>
+            <div class="mb-3">
+                <label for="clubColors" class="form-label text-white fw-semibold sub-subtitle">Club
+                    colors<span class="paragraph fw-medium text-danger"> *</span></label>
+                <input type="text" class="form-control is-invalid" id="clubColors"
+                    aria-describedby="basic-addon3 basic-addon4" name="clubColors" onchange=validateInput("clubColors")
+                    required />
+            </div>
+            <div class="mb-3">
+                <label for="founded" class="form-label text-white fw-semibold sub-subtitle">Founded<span
+                        class="paragraph fw-medium text-danger"> *</span></label>
+                <input type="text" class="form-control is-invalid" id="founded"
+                    aria-describedby="basic-addon3 basic-addon4" name="founded" required
+                    onchange=validateInput("founded") />
+            </div>
+            <div class="mb-3">
+                <label for="website" class="form-label text-white fw-semibold sub-subtitle">Website</label>
+                <input type="text" class="form-control" id="website" aria-describedby="basic-addon3 basic-addon4"
+                    name="website" onchange=validateInput("website") />
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label text-white fw-semibold sub-subtitle">Phone
+                    number</label>
+                <input type="text" class="form-control" id="phone" aria-describedby="basic-addon3 basic-addon4"
+                    name="phone" onchange=validateInput("phone") />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-white fw-semibold sub-subtitle">Email
+                    address<span class="paragraph fw-medium text-danger"> *</span></label>
+                <input type="text" class="form-control is-invalid" id="email"
+                    aria-describedby="basic-addon3 basic-addon4" name="email" required
+                    onchange=validateInput("email") />
+            </div>
+            <div class="mb-3">
+                <label for="crest" class="form-label text-white fw-semibold sub-subtitle">Crest</label>
+                <input class="form-control" type="file" id="crest" name="crest" onchange=validateInput("crest") />
+            </div>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center align-content-center padding-4">
+        {{> create/buttons/createClub}}
+        {{> create/buttons/discardChanges}}
+    </div>
+</div>
+
+<script src="/handlers/handleInputValidation.js"></script>
+<script src="/handlers/handleSelectValidation.js"></script>
+<script src="/handlers/handleShowModal.js"></script>
+<script src="/handlers/handleFromValidation.js"></script>
+<script src="/handlers/handleRedirect.js"></script>
+<script src="/handlers/handleSendForm.js"></script>
