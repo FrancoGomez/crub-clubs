@@ -10,16 +10,13 @@ const { PORT } = process.env;
 app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
 
-app.get("/", function (req, res) {
-  res.render("home", {
-    helpers: {
-      returnPath: () => {{ return __dirname}},
-    },
-  });
-});
-
 app.use(express.json());
 app.use(express.text());
-app.use("/teams", teamRouter);
+
+app.use(express.static("public/"));
+app.use(express.static("public/img"));
+app.use(express.static("public/src"));
+
+app.use("/", teamRouter);
 
 app.listen(PORT || 8080);
