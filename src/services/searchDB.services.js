@@ -4,6 +4,9 @@ const fs = require('node:fs');
 const teamDir = path.join(__dirname, '../data/teams.json');
 const teamsData = JSON.parse(fs.readFileSync(teamDir));
 
+const countriesDir = path.join(__dirname, '../data/countries.json');
+const countriesData = JSON.parse(fs.readFileSync(countriesDir));
+
 const getTeamIndexByTLA = (tla) => {
   for (let index = 0; index < teamsData.length; index += 1) {
     const team = teamsData[index];
@@ -22,4 +25,8 @@ const returnTeam = (tla) => {
   return teamsData[teamIndex];
 };
 
-module.exports = { returnAllTeams, getTeamIndexByTLA, returnTeam };
+const returnAllCountries = () => countriesData;
+
+module.exports = {
+  returnAllTeams, getTeamIndexByTLA, returnTeam, returnAllCountries,
+};
