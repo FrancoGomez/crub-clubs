@@ -9,7 +9,7 @@ const teamsData = JSON.parse(fs.readFileSync(teamsDir));
 const teamsBackupDir = path.join(__dirname, '../data/teams-backup.json');
 const teamsBackupData = JSON.parse(fs.readFileSync(teamsBackupDir));
 
-const putTeam = (newData) => {
+const createTeam = (newData) => {
   if (!newData.tla) return null;
 
   const auxTeamsData = [...teamsData];
@@ -28,7 +28,7 @@ const putTeam = (newData) => {
   return fs.writeFileSync(teamsDir, JSON.stringify(auxTeamsData));
 };
 
-const patchTeam = (tla, newData) => {
+const updateTeam = (tla, newData) => {
   const teamIndex = getTeamIndexByTLA(tla);
 
   if (teamIndex === null) return null;
@@ -53,8 +53,15 @@ const deleteTeam = (tla) => {
   return fs.writeFileSync(teamsDir, JSON.stringify(auxTeamsData));
 };
 
+const resetUploadedImages = () => {
+  const dirPath = path.join(__dirname, '../../public/img/crests');
+  fs.rmSync(dirPath, { recursive: true, force: true });
+
+  fs.mkdirSync(dirPath);
+};
+
 const resetTeamsJson = () => fs.writeFileSync(teamsDir, JSON.stringify(teamsBackupData));
 
 module.exports = {
-  putTeam, patchTeam, deleteTeam, resetTeamsJson,
+  createTeam, updateTeam, deleteTeam, resetTeamsJson, resetUploadedImages,
 };
