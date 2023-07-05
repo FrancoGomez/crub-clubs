@@ -110,7 +110,7 @@ teamRouter.get("/update/:tla", (req, res) => {
 teamRouter.post("/update/:tla", upload.single("crest"), async (req, res) => {
   const { tla } = req.params;
   const teamInfo = req.body;
-  console.log(teamInfo);
+
   if (req.file !== undefined) {
     teamInfo.crestUrl = `crests/${req.file.filename}`;
   }
