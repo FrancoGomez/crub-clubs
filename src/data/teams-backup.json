@@ -3,7 +3,7 @@
     "id": 57,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Arsenal FC",
     "shortName": "Arsenal",
@@ -22,7 +22,7 @@
     "id": 58,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Aston Villa FC",
     "shortName": "Aston Villa",
@@ -41,7 +41,7 @@
     "id": 61,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Chelsea FC",
     "shortName": "Chelsea",
@@ -60,7 +60,7 @@
     "id": 62,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Everton FC",
     "shortName": "Everton",
@@ -79,7 +79,7 @@
     "id": 64,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Liverpool FC",
     "shortName": "Liverpool",
@@ -98,7 +98,7 @@
     "id": 65,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Manchester City FC",
     "shortName": "Man City",
@@ -117,7 +117,7 @@
     "id": 66,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Manchester United FC",
     "shortName": "Man United",
@@ -136,7 +136,7 @@
     "id": 67,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Newcastle United FC",
     "shortName": "Newcastle",
@@ -152,29 +152,29 @@
     "lastUpdated": "2020-05-14T02:41:53Z"
   },
   {
-    "id": 68,
+    "id": null,
     "area": {
-      "id": 2072,
-      "name": "England"
+      "id": null,
+      "name": "United Kingdom"
     },
     "name": "Norwich City FC",
     "shortName": "Norwich",
     "tla": "NOR",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/8/8c/Norwich_City.svg",
+    "crestUrl": "crests/1688431329789.jpg",
     "address": "Carrow Road Norwich NR1 1JE",
     "phone": null,
     "website": "http://www.canaries.co.uk",
     "email": "reception@ncfc-canaries.co.uk",
-    "founded": 1902,
+    "founded": "1902",
     "clubColors": "Yellow / Green",
     "venue": "Carrow Road",
-    "lastUpdated": "2020-05-14T02:41:54Z"
+    "lastUpdated": "2023-07-04T00:42:09.800Z"
   },
   {
     "id": 73,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Tottenham Hotspur FC",
     "shortName": "Tottenham",
@@ -193,7 +193,7 @@
     "id": 76,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Wolverhampton Wanderers FC",
     "shortName": "Wolverhampton",
@@ -209,29 +209,29 @@
     "lastUpdated": "2020-05-14T02:42:06Z"
   },
   {
-    "id": 328,
+    "id": null,
     "area": {
-      "id": 2072,
-      "name": "England"
+      "id": null,
+      "name": "United Kingdom"
     },
     "name": "Burnley FC",
     "shortName": "Burnley",
     "tla": "BUR",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Burnley_F.C._Logo.svg",
+    "crestUrl": "crests/1688431513337.jpg",
     "address": "Harry Potts Way Burnley BB10 4BX",
     "phone": "+44 (0871) 2211882",
     "website": "http://www.burnleyfootballclub.com",
     "email": "info@burnleyfc.com",
-    "founded": 1881,
+    "founded": "1881",
     "clubColors": "Claret / Sky Blue",
     "venue": "Turf Moor",
-    "lastUpdated": "2020-05-14T02:42:11Z"
+    "lastUpdated": "2023-07-04T00:45:13.343Z"
   },
   {
     "id": 338,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Leicester City FC",
     "shortName": "Leicester City",
@@ -250,7 +250,7 @@
     "id": 340,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Southampton FC",
     "shortName": "Southampton",
@@ -269,7 +269,7 @@
     "id": 346,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Watford FC",
     "shortName": "Watford",
@@ -285,29 +285,29 @@
     "lastUpdated": "2020-05-14T02:42:25Z"
   },
   {
-    "id": 354,
+    "id": null,
     "area": {
-      "id": 2072,
-      "name": "England"
+      "id": null,
+      "name": "United Kingdom"
     },
     "name": "Crystal Palace FC",
     "shortName": "Crystal Palace",
     "tla": "CRY",
-    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Crystal_Palace_FC_logo.svg",
+    "crestUrl": "crests/1688431672329.jpg",
     "address": "Whitehorse Lane London SE25 6PU",
     "phone": "+44 (020) 87686000",
     "website": "http://www.cpfc.co.uk",
     "email": "info@cpfc.co.uk",
-    "founded": 1905,
+    "founded": "1905",
     "clubColors": "Red / Blue",
     "venue": "Selhurst Park",
-    "lastUpdated": "2020-05-14T02:42:33Z"
+    "lastUpdated": "2023-07-04T00:47:52.337Z"
   },
   {
     "id": 356,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Sheffield United FC",
     "shortName": "Sheffield Utd",
@@ -326,7 +326,7 @@
     "id": 397,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "Brighton & Hove Albion FC",
     "shortName": "Brighton Hove",
@@ -345,7 +345,7 @@
     "id": 563,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "West Ham United FC",
     "shortName": "West Ham",
@@ -364,7 +364,7 @@
     "id": 1044,
     "area": {
       "id": 2072,
-      "name": "England"
+      "name": "United Kingdom"
     },
     "name": "AFC Bournemouth",
     "shortName": "Bournemouth",
@@ -378,5 +378,43 @@
     "clubColors": "Red / Black",
     "venue": "Vitality Stadium",
     "lastUpdated": "2020-05-14T02:43:14Z"
+  },
+  {
+    "id": null,
+    "area": {
+      "id": null,
+      "name": "Mexico"
+    },
+    "name": "Atlas FC",
+    "shortName": "Atlas",
+    "tla": "AFC",
+    "crestUrl": "crests/1688431304603.jpg",
+    "address": "Atlas F.C., Zapopan, Jalisco",
+    "phone": "+52 33 3898 7244",
+    "website": "https://www.atlasfc.com.mx/",
+    "email": "lorena.aceves@atlas.com.mx",
+    "founded": "1916",
+    "clubColors": "Red / Black",
+    "venue": "Atlas F.C.",
+    "lastUpdated": "2023-07-04T00:41:44.609Z"
+  },
+  {
+    "id": null,
+    "area": {
+      "id": null,
+      "name": "Argentina"
+    },
+    "name": "Club Altetico River Plate",
+    "shortName": "River Plate",
+    "tla": "RIV",
+    "crestUrl": "crests/1688475762229.jpg",
+    "address": "Av. Figueroa Alcorta 7597, Buenos Aires",
+    "phone": "+54 (11) 5238-2505",
+    "website": "https://www.cariverplate.com.ar/",
+    "email": "club@cariverplate.com.ar",
+    "founded": "1901",
+    "clubColors": "Red / White",
+    "venue": "Estadio Mâs Monumental",
+    "lastUpdated": "2023-07-04T13:02:42.259Z"
   }
 ]
