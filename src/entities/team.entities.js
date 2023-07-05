@@ -1,4 +1,4 @@
-const mapArea = require('../mappers/area.mappers');
+const mapArea = require("../mappers/area.mappers");
 
 class Team {
   /**
@@ -20,7 +20,6 @@ class Team {
   constructor(
     id,
     newAreaData,
-    oldAreaData,
     name,
     shortName,
     tla,
@@ -31,10 +30,10 @@ class Team {
     email,
     founded,
     clubColors,
-    venue,
+    venue
   ) {
     this.id = id;
-    this.area = mapArea(newAreaData, oldAreaData);
+    this.area = mapArea(newAreaData);
     this.name = name;
     this.shortName = shortName;
     this.tla = tla;
