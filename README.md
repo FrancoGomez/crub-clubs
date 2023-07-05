@@ -95,26 +95,27 @@ Then pass, as the body, a `FormData` object that contains:
 
 **Server:** Node, Express
 
-## Installation
+## Run Locally
 
-Clone the project with:
+Clone the project
 
-`git clone repo-url`
+```bash
+  git clone https://github.com/FrancoGomez/crud-clubs.git
+```
 
-Then install all the dependencies with:
+Go to the project directory
 
-`npm i`
+```bash
+  cd crud-clubs
+```
 
-And then create a `.env` file that will contain:
+Install dependencies
 
-| Variable       | Type     | Description                              |
-| :------------- | :------- | :--------------------------------------- |
-| `PORT`         | `number` | Where the server will run (Default 8080) |
-| `MAPS_API_KEY` | `string` | Apikey to use the GoogleMaps embed API   |
+```bash
+  npm install
+```
 
-## Deployment
-
-To deploy the project run:
+Start the server
 
 ```bash
   npm run server
