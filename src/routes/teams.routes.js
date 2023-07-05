@@ -60,11 +60,13 @@ teamRouter.get("/create/", (req, res) => {
 teamRouter.post("/create/", upload.single("crest"), (req, res) => {
   const teamInfo = req.body;
 
+  if (!requiredParamsExist(teamInfo)) return res.status(404).send();
+
   if (req.file) {
     teamInfo.crestUrl = `crests/${req.file.filename}`;
   }
 
-  if (modifyDB.createTeam(teamInfo) === null) return res.status(404).send();
+  modifyDB.createTeam(teamInfo);
 
   return res.status(200).send();
 });
@@ -111,12 +113,15 @@ teamRouter.post("/update/:tla", upload.single("crest"), async (req, res) => {
   const { tla } = req.params;
   const teamInfo = req.body;
 
+  if (!requiredParamsExist(teamInfo)) return res.status(404).send();
+
   if (req.file !== undefined) {
     teamInfo.crestUrl = `crests/${req.file.filename}`;
   }
 
-  if (modifyDB.updateTeam(tla, teamInfo) === null)
-    return res.status(404).send();
+  if (searchDB.getTeamIndexByTLA(tla) == null) return res.status(404).send();
+
+  modifyDB.updateTeam(tla, teamInfo);
 
   return res.status(200).send();
 });
@@ -128,5 +133,18 @@ teamRouter.delete("/:tla", (req, res) => {
 
   return res.status(200).send();
 });
+
+const requiredParamsExist = (data) => {
+  if (!data.name) return false;
+  if (!data.area) return false;
+  if (!data.shortName) return false;
+  if (!data.tla) return false;
+  if (!data.address) return false;
+  if (!data.clubColors) return false;
+  if (!data.founded) return false;
+  if (!data.email) return false;
+
+  return true;
+};
 
 module.exports = teamRouter;
