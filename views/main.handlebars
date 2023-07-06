@@ -28,10 +28,10 @@
       </li>
       {{#each teamsInfo}}
       <li
-        class="list-group-item {{#if (isEven @index)}}blue-bg{{else}}dark-blue-bg{{/if}} text-light border border-0 padding-2">
+        class="list-group-item club-row {{#if (isEven @index)}}blue-bg{{else}}dark-blue-bg{{/if}} text-light border border-0 padding-2">
         <div class="d-flex justify-content-between align-content-center">
           <div class="d-flex justify-content-start align-content-center w-100" style="max-width: 33%;">
-            <a class=" d-flex justify-content-start align-content-center w-100 link-light text-decoration-none"
+            <a id="{{this.tla}}-crest" class=" d-flex justify-content-start align-content-center w-100 link-light text-decoration-none"
               href={{this.tla}}>
               <div class="mt-auto mb-auto m-1 me-2 container-image-small">
                 <img src={{this.crestUrl}} alt="{{this.shortName}} crest"
