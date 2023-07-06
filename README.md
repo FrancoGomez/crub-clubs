@@ -159,3 +159,5 @@ npm run cy:open
 **Client:** Handlebars (HTML), CSS, JS
 
 **Server:** Node, Express
+
+**Testing:** Cypress
