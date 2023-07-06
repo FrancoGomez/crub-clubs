@@ -115,10 +115,23 @@ Then pass, as the body, a `FormData` object that contains:
 | :-------- | :------- | :--------------------- |
 | `id`      | `string` | **Required**. Club TLA |
 
+## Running Tests
+
+To run e2e test, run:
+
+```bash
+npm run cy:open
+```
+
 ## Directory Structure
 
 ```bash
   ├── index.js  (base server structure)
+  |
+  ├── cypress
+  |   ├── e2e (tests)
+  |   ├── fixtures (images for tests)
+  |   └── support
   |
   ├── public  (what goes to the front)
   |   ├── img   (images and icons)
